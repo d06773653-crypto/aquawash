@@ -5,18 +5,51 @@
   <title>AquaWash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- React -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- React БЕЗ Babel -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
-  <!-- Babel -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial;
+      background:#060b14;
+      color:#fff;
+      text-align:center;
+      padding:30px;
+    }
+
+    .card {
+      background:#111d2e;
+      padding:20px;
+      border-radius:14px;
+      margin:15px auto;
+      max-width:400px;
+    }
+
+    button {
+      padding:12px 18px;
+      margin:8px;
+      border:none;
+      border-radius:10px;
+      cursor:pointer;
+    }
+
+    .primary { background:#00d4ff; }
+    .gold { background:#f0c040; }
+    .ghost { background:#1e3250; color:#ccc; }
+
+    .code {
+      font-size:26px;
+      letter-spacing:4px;
+      margin:15px;
+    }
+  </style>
 </head>
 
 <body>
   <div id="root"></div>
 
-  <!-- ВАЖЛИВО -->
-  <script type="text/babel" src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
